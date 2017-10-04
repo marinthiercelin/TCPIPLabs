@@ -1,0 +1,31 @@
+Q14 : With IPv6 we observe that after each duplet (ping request/ping reply) a new DNS query is formed. With IPv4 the intial DNS queries were sufficient.
+With IPv4 we obtain an average rtt of 18 ms whereas with IPv6 we obtain an average of 20.7 ms. 
+
+Q15 : The traceroute6 to reach facebook is the following :
+
+1  2002:80b2:9c51::cccc:1 (2002:80b2:9c51::cccc:1)  5.57 ms  0.989 ms  1.002 ms
+
+** Some unknow hops **
+
+9  edge-star-mini6-shv-01-amt2.facebook.com (2a03:2880:f106:83:face:b00c:0:25de)  25.217 ms  20.585 ms  20.783 ms
+
+This is at least a bit different from the traceroot with IPv4. The unknown hops are the consequence of the IPv4 tunneling. It means that the Ipv6 paquet has been encapsulated to reach its destination.
+
+Q16 : There is no difference when visiting lca.epfl.ch using IPv4 or IPv6. This is because the web servers of lca.epfl.ch have an IPv4 adresse AND an IPv6 adress. Therefore one can access with no difficulties.
+
+Q17 : Besoin de reboot pour comparer à IPv4
+
+Q18 : It is now possible to ping swisscom.ch. This is maybe because the swisscom servers' firewall filters the ICMP packets but does not filter the packets of the ICMP6 protocol.
+
+Q19 : We can retrieve the traceroute with both IPv4 and IPv6. Again 
+the difference is that the traceroute6 only shows the first and the last hop. All intermediate hops are not displayed because the  IPv6 packets are encapsulated to be able to travel in a IPv4 network. This implies that all the IPv4 hops are not known to the IPv6 packet.
+On the other hand, the traceroute4 shows a normal route.
+
+Q20 : The connection is done using IPv4
+
+Q21 : Our machines first check the adress of the destination and see if the latter has an IPv4 adress, IPv6 adress or both. The machine then chooses accordingly the correct way to create a connetion. In the case where both systems are supported, IPv4 is chosen by default.
+
+Q22 : The final command that we found is the following :
+sudo tshark -i wlp2s0 -E occurrence=f -f "src port 53" -n -T fields -e ip.addr -e ip.dst  -e dns.a -e dns.resp.name
+
+The first thing we did was to create a capture filter that only keeps the DNS-reply packets (so the ones that arrive with a source port = 53). Then we only needed to find the correct display filters to extract the required informations. By searching on the official webpage, we found those 3 filters, respectively the IP of the DNS server, the alias name of the web page that we are looking for, and finally its IP adress.
