@@ -37,6 +37,11 @@ def firstNetwork():
 	net.addLink( r1, h3, intfName1='r1-eth1', intfName2='h3-eth0' )
 	net.addLink( h3, s3, intfName1='h3-eth1')
 
+	net.cmd("sh ovs-vsctl add-port s3 eth0")
+	h3.cmd("dhclient h3-eth1 ")
+	h3.cmd("iptables -t nat -A POSTROUTING -o h3-eth1 -j MASQUERADE")
+	
+	
 	info( '*** Starting network\n') 
 	net.start()
 	"This is used to run commands on the hosts"
