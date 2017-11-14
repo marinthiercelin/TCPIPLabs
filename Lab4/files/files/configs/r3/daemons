@@ -20,8 +20,8 @@
 #
 zebra=yes
 bgpd=no
-ospfd=no
-ospf6d=no
+ospfd=yes
+ospf6d=yes
 ripd=no
 ripngd=no
 isisd=no

@@ -70,8 +70,8 @@ def run():
             host.cmd('ip -6 addr add 2001:1:0:11::10/64 dev h1-eth1')
             host.cmd('ip -6 route add default via 2001:1:0:11::1')
         elif host.name is 'h2':            
-            host.cmd('ip -6 addr add 2001:1:0:12::20/64 dev h2-eth1')
-            host.cmd('ip -6 route add default via 2001:1:0:12::2')
+            host.cmd('ip -6 addr add 2001:1:0:22::20/64 dev h2-eth1')
+            host.cmd('ip -6 route add default via 2001:1:0:22::2')
 
     info('** Enabling xterm for all hosts\n')
     makeTerms( hosts, 'node' )
