@@ -1,0 +1,130 @@
+2017/11/10 15:46:09 OSPF6: OSPF6d (Quagga-0.99.22.4 ospf6d-0.9.7r) starts: vty@2606
+2017/11/10 15:46:09 OSPF6: Interface Event r4-eth1: [InterfaceUp]
+2017/11/10 15:46:09 OSPF6: Interface r4-eth1 is down, can't execute [InterfaceUp]
+2017/11/10 15:46:09 OSPF6: Interface Event r4-eth2: [InterfaceUp]
+2017/11/10 15:46:09 OSPF6: Interface r4-eth2 is down, can't execute [InterfaceUp]
+2017/11/10 15:46:09 OSPF6: Interface Event r4-eth1: [InterfaceUp]
+2017/11/10 15:46:09 OSPF6: Interface state change r4-eth1: Down -> Waiting
+2017/11/10 15:46:09 OSPF6: Filter out Linklocal: fe80::6497:cbff:fe47:d042/64
+2017/11/10 15:46:09 OSPF6: Interface Event r4-eth2: [InterfaceUp]
+2017/11/10 15:46:09 OSPF6: Interface state change r4-eth2: Down -> Waiting
+2017/11/10 15:46:09 OSPF6: Filter out Linklocal: fe80::ecb6:2bff:febf:fbeb/64
+2017/11/10 15:46:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:46:12 OSPF6: Neighbor state change 10.10.14.1%r4-eth1: [Down]->[Init]
+2017/11/10 15:46:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *2Way-Received*
+2017/11/10 15:46:12 OSPF6: Neighbor state change 10.10.14.1%r4-eth1: [Init]->[Twoway]
+2017/11/10 15:46:12 OSPF6: Interface Event r4-eth1: [NeighborChange]
+2017/11/10 15:46:13 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:46:13 OSPF6: Neighbor state change 10.10.45.5%r4-eth2: [Down]->[Init]
+2017/11/10 15:46:22 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:46:23 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:46:23 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *2Way-Received*
+2017/11/10 15:46:23 OSPF6: Neighbor state change 10.10.45.5%r4-eth2: [Init]->[Twoway]
+2017/11/10 15:46:23 OSPF6: Interface Event r4-eth2: [NeighborChange]
+2017/11/10 15:46:32 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:46:33 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:46:42 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:46:43 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:46:49 OSPF6: Interface Event r4-eth1: [WaitTimer]
+2017/11/10 15:46:49 OSPF6: DR Election on r4-eth1: DR: 10.10.45.4 BDR: 10.10.14.1%r4-eth1
+2017/11/10 15:46:49 OSPF6: Interface state change r4-eth1: Waiting -> DR
+2017/11/10 15:46:49 OSPF6: Interface Event r4-eth2: [WaitTimer]
+2017/11/10 15:46:49 OSPF6: DR Election on r4-eth2: DR: 10.10.45.5%r4-eth2 BDR: 10.10.45.5%r4-eth2
+2017/11/10 15:46:49 OSPF6: Interface state change r4-eth2: Waiting -> DROther
+2017/11/10 15:46:49 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *AdjOK?*
+2017/11/10 15:46:49 OSPF6: Neighbor state change 10.10.14.1%r4-eth1: [Twoway]->[ExStart]
+2017/11/10 15:46:49 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *AdjOK?*
+2017/11/10 15:46:49 OSPF6: Neighbor state change 10.10.45.5%r4-eth2: [Twoway]->[ExStart]
+2017/11/10 15:46:49 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *NegotiationDone*
+2017/11/10 15:46:49 OSPF6: Neighbor state change 10.10.14.1%r4-eth1: [ExStart]->[ExChange]
+2017/11/10 15:46:49 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *ExchangeDone*
+2017/11/10 15:46:49 OSPF6: Neighbor state change 10.10.14.1%r4-eth1: [ExChange]->[Full]
+2017/11/10 15:46:52 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:46:52 OSPF6: Interface Event r4-eth1: [NeighborChange]
+2017/11/10 15:46:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *NegotiationDone*
+2017/11/10 15:46:53 OSPF6: Neighbor state change 10.10.45.5%r4-eth2: [ExStart]->[ExChange]
+2017/11/10 15:46:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:46:53 OSPF6: Interface Event r4-eth2: [NeighborChange]
+2017/11/10 15:46:53 OSPF6: DR Election on r4-eth2: DR: 10.10.45.5%r4-eth2 BDR: 10.10.45.4
+2017/11/10 15:46:53 OSPF6: Interface state change r4-eth2: DROther -> BDR
+2017/11/10 15:46:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *AdjOK?*
+2017/11/10 15:46:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *ExchangeDone*
+2017/11/10 15:46:53 OSPF6: Neighbor state change 10.10.45.5%r4-eth2: [ExChange]->[Loading]
+2017/11/10 15:46:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *LoadingDone*
+2017/11/10 15:46:53 OSPF6: Neighbor state change 10.10.45.5%r4-eth2: [Loading]->[Full]
+2017/11/10 15:47:02 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:47:03 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:47:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:47:13 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:47:22 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:47:23 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:47:32 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:47:33 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:47:42 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:47:43 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:47:52 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:47:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:48:02 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:48:03 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:48:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:48:13 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:48:22 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:48:23 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:48:32 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:48:33 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:48:42 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:48:43 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:48:52 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:48:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:49:02 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:49:03 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:49:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:49:13 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:49:22 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:49:23 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:49:32 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:49:33 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:49:42 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:49:43 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:49:52 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:49:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:50:02 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:50:03 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:50:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:50:13 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:50:22 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:50:23 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:50:32 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:50:33 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:50:42 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:50:43 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:50:52 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:50:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:51:02 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:51:03 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:51:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:51:13 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:51:22 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:51:23 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:51:32 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:51:33 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:51:42 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:51:43 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:51:52 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:51:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:52:02 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:52:03 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:52:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:52:13 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:52:22 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:52:23 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:52:32 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:52:33 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:52:42 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:52:43 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:52:52 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:52:53 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:53:02 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:53:03 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*
+2017/11/10 15:53:12 OSPF6: Neighbor Event 10.10.14.1%r4-eth1: *HelloReceived*
+2017/11/10 15:53:13 OSPF6: Neighbor Event 10.10.45.5%r4-eth2: *HelloReceived*

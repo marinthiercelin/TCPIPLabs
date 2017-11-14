@@ -1,0 +1,18 @@
+2017/11/10 15:46:05 OSPF6: OSPF6d (Quagga-0.99.22.4 ospf6d-0.9.7r) starts: vty@2606
+2017/11/14 10:16:29 OSPF6: OSPF6d (Quagga-0.99.22.4 ospf6d-0.9.7r) starts: vty@2606
+2017/11/14 11:05:52 OSPF6: OSPF6d (Quagga-0.99.22.4 ospf6d-0.9.7r) starts: vty@2606
+2017/11/14 11:05:52 OSPF6: sendmsg failed: ifindex: 347: Cannot assign requested address (99)
+2017/11/14 11:05:52 OSPF6: Could not send entire message
+2017/11/14 11:05:52 OSPF6: sendmsg failed: ifindex: 361: Invalid argument (22)
+2017/11/14 11:05:52 OSPF6: Could not send entire message
+2017/11/14 11:06:22 OSPF6: OSPF6d (Quagga-0.99.22.4 ospf6d-0.9.7r) starts: vty@2606
+2017/11/14 11:06:22 OSPF6: sendmsg failed: ifindex: 387: Cannot assign requested address (99)
+2017/11/14 11:06:22 OSPF6: Could not send entire message
+2017/11/14 11:06:22 OSPF6: sendmsg failed: ifindex: 401: Invalid argument (22)
+2017/11/14 11:06:22 OSPF6: Could not send entire message
+2017/11/14 11:29:56 OSPF6: OSPF6d (Quagga-0.99.22.4 ospf6d-0.9.7r) starts: vty@2606
+2017/11/14 11:29:56 OSPF6: sendmsg failed: ifindex: 441: Invalid argument (22)
+2017/11/14 11:29:56 OSPF6: Could not send entire message
+2017/11/14 11:35:58 OSPF6: OSPF6d (Quagga-0.99.22.4 ospf6d-0.9.7r) starts: vty@2606
+2017/11/14 11:35:58 OSPF6: sendmsg failed: ifindex: 481: Invalid argument (22)
+2017/11/14 11:35:58 OSPF6: Could not send entire message
