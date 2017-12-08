@@ -7,7 +7,7 @@ import os
 # You can show useful information during script execution
 from mininet.log import info
 
-# Class in mininext which includes PID namespaces, log and run isolation. 
+# Class in mininext which includes PID namespaces, log and run isolation.
 from mininext.topo import Topo
 
 # Class in mininext to setup the quagga service on virtual routers
@@ -33,7 +33,7 @@ class Lab6Topo(Topo):
         # Initialize the Quagga Service
         # autoStart=True (default) --> starts automatically quagga on the host
         # autoStop=True (default) --> stops automatically quagga (we don't want this)
-        quaggaSvc = QuaggaService(autoStop=False) 
+        quaggaSvc = QuaggaService(autoStart = True, autoStop=False) 
 
         # Configuration file path for quagga routers
         quaggaBaseConfigPath = selfPath + '/configs/'
@@ -41,7 +41,7 @@ class Lab6Topo(Topo):
         # Initializing local variables
         netHosts = []
         NodeList = []
-        
+
         # List of all hosts in the network.
         # Note that each node requires at least one IP address.
         netHosts.append(NetworkHosts(name='h1', IP='192.10.10.10/24', DG='via 192.10.10.1'))
@@ -52,11 +52,11 @@ class Lab6Topo(Topo):
         netHosts.append(NetworkHosts(name='r3', IP='192.13.13.3/24', DG=''))
         netHosts.append(NetworkHosts(name='r4', IP='192.24.24.4/24', DG=''))
         netHosts.append(NetworkHosts(name='r5', IP='192.50.50.5/24', DG=''))
-	
+
         for host in netHosts:
 	        # We create a list of node names
             NodeList.append(host.name)
-            if host.name in ['h1','h2','h5']: 
+            if host.name in ['h1','h2','h5']:
 	            # We configure PCs with default gateway and without quagga service
                 AddPCHost = self.addHost(name=host.name, ip=host.IP, defaultRoute=host.DG, hostname=host.name, privateLogDir=True, privateRunDir=True, inMountNamespace=True, inPIDNamespace=True, inUTSNamespace=True)
             else:
@@ -64,7 +64,7 @@ class Lab6Topo(Topo):
                 AddQuaggaHost = self.addHost(name=host.name, ip=host.IP, hostname=host.name, privateLogDir=True, privateRunDir=True, inMountNamespace=True, inPIDNamespace=True, inUTSNamespace=True)
                 # We setup Quagga service and path to config files
                 quaggaSvcConfig = {'quaggaConfigPath': quaggaBaseConfigPath + host.name}
-                self.addNodeService(node=host.name, service=quaggaSvc, nodeConfig=quaggaSvcConfig)     	
+                self.addNodeService(node=host.name, service=quaggaSvc, nodeConfig=quaggaSvcConfig)
         # Adding switches to the network, we specify OpenFlow v1.3 for IPv6 suppport
         SW1 = self.addSwitch('SW1', protocols='OpenFlow13')
         SW2 = self.addSwitch('SW2', protocols='OpenFlow13')
